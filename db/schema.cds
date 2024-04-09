@@ -20,6 +20,7 @@ entity Products {
   Discontinued: Boolean;
   category: Association to Categories;
   supplier: Association to Suppliers;
+  orderdetails: Association to many OrderDetails on orderdetails.product = $self;
 }
 
 entity Suppliers {

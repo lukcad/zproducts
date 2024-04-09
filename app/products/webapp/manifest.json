@@ -96,7 +96,6 @@
       "css": []
     },
     "routing": {
-      "config": {},
       "routes": [
         {
           "pattern": ":?query:",
@@ -118,7 +117,7 @@
             "settings": {
               "contextPath": "/Products",
               "variantManagement": "Page",
-              "hideFilterBar": true,
+              "hideFilterBar": false,
               "navigation": {
                 "Products": {
                   "detail": {
@@ -136,7 +135,27 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Products"
+              "contextPath": "/Products",
+              "controlConfiguration": {
+                "orderdetails/@com.sap.vocabularies.UI.v1.LineItem#ItemsofOrders": {
+                  "tableSettings": {
+                    "selectionMode": "None"
+                  }
+                },
+                "orderdetails/@com.sap.vocabularies.UI.v1.LineItem#ItemsofOrders1": {
+                  "tableSettings": {
+                    "creationMode": {
+                      "createAtEnd": true,
+                      "inlineCreationRowsHiddenInEditMode": false
+                    },
+                    "personalization": {
+                      "column": false,
+                      "filter": true,
+                      "sort": true
+                    }
+                  }
+                }
+              }
             }
           }
         }
