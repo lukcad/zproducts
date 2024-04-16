@@ -1,6 +1,6 @@
 # zproducts
 
-This is simplest example which was created by using SAP Build Code and gen-AI extension named as `Joule`.
+This is simplest example which was created by using `SAP Build Code` (BTP tool) and gen-AI extension named as `Joule`.
 
 By Jouly's help it was created model and sample data.
 
